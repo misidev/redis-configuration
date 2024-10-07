@@ -9,14 +9,14 @@ Setting up a Spring Boot application with Redis to handle a simple GET request. 
 - Redis installed and running
 - Spring Boot application setup
 
-## Step 1: Create a Spring Boot Application
+## Create a Spring Boot Application
 
 1. **Initialize a new Spring Boot project** using [Spring Initializr](https://start.spring.io/).
 2. **Select Dependencies**:
     - Spring Web
     - Spring Data Redis
 
-## Step 2: Add Dependencies
+##  Add Dependencies
 
 ### Maven
 
@@ -57,7 +57,7 @@ Create simple REST controller to test the Catch.
 Run your Spring Boot application. When you access the endpoint (e.g., http://localhost:8080/data/1), the first request will take some time to respond (due to the simulated delay). Subsequent requests with the same ID will return the cached result instantly.
 
  
-## Step 7: Managing the Cache
+## Managing the Cache
 
 You can customize the cache management with annotations like `@CachePut`, `@CacheEvict`, etc. Here’s a brief overview:
 
